@@ -9,7 +9,7 @@ angular.module("MyApp", [])
   })
   .then(function() {
       
-    var dataArr = data.split(/\r\n/|/\n/);
+    var dataArr = data.split(/\r\n|\n|\r/);
 
     $scope.final = [];
 

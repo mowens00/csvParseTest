@@ -8,14 +8,12 @@
 </head>
 
 <body ng-app="MyApp" ng-cloak>
-  <div ng-controller="ctrl">
-    
-    {{hi}}
-    
+  <div ng-controller="ctrl">    
+    <div ng-repeat="obj in final">
+      {{obj.first_name}} - {{obj.last_name}} - {{obj.phone_number}}
+    </div>
   </div>
 
-  
-  
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
